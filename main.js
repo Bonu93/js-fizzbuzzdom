@@ -2,19 +2,18 @@
 
 const container = document.querySelector('.container')
 
-for (let i = 1; i <= 99; i++) {
+for (let i = 1; i <= 100; i++) {
 
     if ((i % 3 == 0) && (i % 5 == 0)) {
-        container.innerHTML += `<div class="box fizzbuzz">fizzbuzz</div>`
+        container.innerHTML += `<div class="box fizzbuzz">fizzbuzz</div>`;
     }
     else if (i % 3 == 0) {
-        container.innerHTML += `<div class="box fizz">fizz</div>`
+        container.innerHTML += `<div class="box fizz">fizz</div>`;
     }
     else if (i % 5 == 0) {
-        container.innerHTML += `<div class="box buzz">buzz</div>`
+        container.innerHTML += `<div class="box buzz">buzz</div>`;
     }
     else {
-        container.innerHTML += `<div class="box">${i}</div>`
+        container.innerHTML += `<div class="box">${i}</div>`;
     }
-
 }
